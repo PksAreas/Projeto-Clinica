@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<!-- Meta tags Obrigatórias -->
 	<meta charset="utf-8">
@@ -9,7 +8,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<title>Sessão</title>
+	<title>Registrar Paciente</title>
+
 </head>
 
 <body>
@@ -49,74 +49,88 @@
 		</nav><!--Fim navbar-->
 		<hr class="my-1">
 
-
-		<h1>Sessão</h1>
+		<h1>Registrar Paciente</h1>
 		<form>
 			<div class="form-row">
-				<div class="form-group col-md-4">
-					<label for="Id">Id da Sessão</label>
-					<input class="form-control" type="text" placeholder="000000001" readonly>
-				</div>
-				<div class="form-group col-md-4">
-					<label for="Id">Id da Anamnese</label>
-					<select class="form-control">
-						<option selected>Escolher...</option>
-						<option>351312351</option>
-						<option>112412415</option>
-						<option>123532615</option>
-						<option>613235135</option>
-						<option>732513566</option>
-					</select>
-				</div>
 				<div class="form-group col-md-2">
-					<label>Data</label>
+					<label for="Id">Id do Paciente</label>
+					<input class="form-control" type="text" placeholder="10234" readonly>
+				</div>
+				<div class="form-group">
+					<label for="Dados do Paciente">Data do Cadastro</label>
 					<input type="date" class="form-control">
 				</div>
 			</div>
 
-			<div class="form-group">
-				<label for="Dados do Paciente">Queixas</label>
-				<textarea class="form-control" rows="2" placeholder="Queixas do Paciente"></textarea>
-			</div>
-			<div class="form-group">
-				<label for="Dados do Paciente">Planos de Tratamento</label>
-				<input type="textarea" class="form-control" rows="2" placeholder="Planos de Tratamento" required="">
-			</div>
-
-			<div class="form-row">	
-				<div class="form-group col-md-6">
-					<label for="Dados do Paciente">Diagnostico</label>
-					<input type="textarea" class="form-control" rows="1" placeholder="Diagnostico Final" required="" maxlength="50">
-				</div>	
-				<div class="form-group col-md-6">
-					<label for="Dados do Paciente">Resumo</label>
-					<textarea class="form-control" rows="1" placeholder="Resumo da Sessão"></textarea>
-				</div>
-			</div>
-
 			<div class="form-row">
-				<div class="form-group col-md-1">
-					<label for="Dados do Paciente">Evolução</label>
-					<input type="text" class="form-control" rows="1" placeholder="000%" onkeypress="$(this).mask('000%');">
+				<div class="form-group col-md-6">
+					<label for="Dados do Paciente">Nome</label>
+					<input class="form-control" type="name" placeholder="Nome do Paciente" maxlength="75" required="">
 				</div>
 				<div class="form-group col-md-2">
-					<label for="Id">Pago</label>
+					<label for="Dados do Paciente">CPF</label>
+					<input type="text"   class="form-control"   placeholder="000.000.000-00" onkeypress="$(this).mask('000.000.000-00');" required="">
+				</div>
+
+				<div class="form-group">
+					<label for="Dados do Paciente">Nascimento</label>
+					<input type="date" class="form-control">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="Dados do Paciente">Sexo</label>
 					<select class="form-control">
 						<option selected>Escolher...</option>
-						<option>Sim</option>
-						<option>Não</option>
+						<option>Masculino</option>
+						<option>Feminino</option>
 					</select>
 				</div>
 			</div>
 			
 
-			
+			<div class="form-row">	
+				<div class="form-group col-md-6">
+					<label for="Dados do Paciente">Endereço</label>
+					<input type="textarea" class="form-control"  placeholder="Endereço" maxlength="100">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="Dados do Paciente">Telefone</label>
+					<input type="text" class="form-control" placeholder="(00)0000-0000" onkeypress="$(this).mask('(00)0000-0000');">
+				</div>
+			</div>
+
+			<div class="form-row">
+				
+				<div class="form-group col-md-3">
+					<label for="dados do Paciente">Foto do Paciente</label>
+					<input type="file" class="form-control-file" id="foto">
+				</div>
+				
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-3">
+					<label for="Dados do Paciente">Plano de Saude</label>
+					<input type="text" class="form-control" placeholder="Plano de Saude" maxlength="20">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="Dados do Paciente">Observações</label>
+					<textarea class="form-control" rows="2" placeholder="Observações"></textarea>
+				</div>
+				
+			</div>
+
+
 			<center><button type="submit" class="btn btn-danger">Enviar</button>
 				<a href="restrito.html" class="btn btn-danger">Voltar</a></center>
-				<hr>
-			</form>
-		</div>
-		<div class="container bg-dark">
+
+
+			</center>
+
+			<hr>
+		</form>
+
+	</div>
+	<div class="container bg-dark">
 		<footer id="rodape">
 			<div class="container">
 				<div class="row">
@@ -150,10 +164,15 @@
 			</div>
 
 
-		<!-- JavaScript-->
-		<script src="js/jquery-3.js"></script>
-		<script src="js/jquery.mask.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
-	</html>
+
+
+
+	<!-- JavaScript-->
+
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/jquery-3.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

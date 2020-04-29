@@ -9,11 +9,12 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<title>Sessão</title>
+	<title>Marcar Consulta</title>
 </head>
 
 <body>
 	<div class="container shadow bg-light "> <!--Container do Body-->
+
 		<nav class="container-fluid bg-light"> <!--Container das Infos-->
 			<div class="row">
 				<div class="col justify-content-bg-start">
@@ -42,81 +43,85 @@
 						<a class="nav-link active" href="trabalhe-conosco.html">Trabalhe conosco</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Sair</a>
+						<a class="nav-link active" href="sign-in.html">Login</a>
 					</li>
 				</ul>
 			</div>
+			
 		</nav><!--Fim navbar-->
 		<hr class="my-1">
 
-
-		<h1>Sessão</h1>
-		<form>
-			<div class="form-row">
-				<div class="form-group col-md-4">
-					<label for="Id">Id da Sessão</label>
-					<input class="form-control" type="text" placeholder="000000001" readonly>
-				</div>
-				<div class="form-group col-md-4">
-					<label for="Id">Id da Anamnese</label>
+		<div class="container">
+			<form>
+			<div class="row">
+				<div class="col-6">
+					<h2>Marcação online</h2>
+						<div class="jumbotron shadow">
+							<div class="form-group">
+							<label>Nome</label>
+							<input type="Name" class="form-control" placeholder="None" required="">						
+						</div>
+						<div class="form-group">
+							<label>Telefone</label>
+							<input type="Text" class="form-control" placeholder="Telefone" required=""  onkeypress="$(this).mask('(00)0000-0000');">
+						</div>
+						<div class="form-group">
+					<label for="Dados do Paciente">Pretendo Consulta de</label>
 					<select class="form-control">
 						<option selected>Escolher...</option>
-						<option>351312351</option>
-						<option>112412415</option>
-						<option>123532615</option>
-						<option>613235135</option>
-						<option>732513566</option>
+						<option>Aconselhamento parental</option>
+						<option>Avaliação psicológica</option>
+						<option>Orientação vocacional</option>
+						<option>Psicologia clinica</option>
+						<option>Psicologia infaltil</option>
+						<option>Psicanalise</option>
+						<option>Psicoterapia</option>
+						<option>Terapia de Casal</option>
+						<option>Não sei</option>
 					</select>
 				</div>
-				<div class="form-group col-md-2">
-					<label>Data</label>
-					<input type="date" class="form-control">
-				</div>
-			</div>
-
-			<div class="form-group">
-				<label for="Dados do Paciente">Queixas</label>
-				<textarea class="form-control" rows="2" placeholder="Queixas do Paciente"></textarea>
-			</div>
-			<div class="form-group">
-				<label for="Dados do Paciente">Planos de Tratamento</label>
-				<input type="textarea" class="form-control" rows="2" placeholder="Planos de Tratamento" required="">
-			</div>
-
-			<div class="form-row">	
-				<div class="form-group col-md-6">
-					<label for="Dados do Paciente">Diagnostico</label>
-					<input type="textarea" class="form-control" rows="1" placeholder="Diagnostico Final" required="" maxlength="50">
-				</div>	
-				<div class="form-group col-md-6">
-					<label for="Dados do Paciente">Resumo</label>
-					<textarea class="form-control" rows="1" placeholder="Resumo da Sessão"></textarea>
-				</div>
-			</div>
-
-			<div class="form-row">
-				<div class="form-group col-md-1">
-					<label for="Dados do Paciente">Evolução</label>
-					<input type="text" class="form-control" rows="1" placeholder="000%" onkeypress="$(this).mask('000%');">
-				</div>
-				<div class="form-group col-md-2">
-					<label for="Id">Pago</label>
-					<select class="form-control">
-						<option selected>Escolher...</option>
-						<option>Sim</option>
-						<option>Não</option>
+				<div class="form-group">
+					<label for="Dados do Paciente">Horarios Disponives</label>
+					<select class="form-control" required="">
+						<option selected>Escolher...</option><option>09:00</option><option>09:30</option>
+						<option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option>
+						<option>14:00</option><option>15:30</option><option>16:30</option><option>19:00</option>
+						
+						
 					</select>
 				</div>
-			</div>
-			
 
-			
-			<center><button type="submit" class="btn btn-danger">Enviar</button>
-				<a href="restrito.html" class="btn btn-danger">Voltar</a></center>
-				<hr>
-			</form>
+
+				<div class="form-group">
+							<label>Informação Adicional</label>
+							<textarea class="form-control" rows="3" placeholder="Informação Adicional"></textarea>
+						</div>
+						<center><button type="submit" class="btn btn-danger">Enviar</button></center>
+
+					</div>
+
+				</div>
+				<div class="col-6">
+					<h2>Outros Canais</h2>
+					<div class="jumbotron shadow">
+						<label>Telefones</label>
+						<div class="container">
+						<p>(00) 0000-0000 / (00) 1111-1111</p>
+					</div>
+					<label>Email</label>
+					<div class="container">
+					<p>consultas@clinicaficticia.com﻿</p>
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</form>
+
 		</div>
-		<div class="container bg-dark">
+
+	</div>
+	<div class="container bg-dark">
 		<footer id="rodape">
 			<div class="container">
 				<div class="row">
@@ -149,11 +154,9 @@
 				</footer>
 			</div>
 
-
-		<!-- JavaScript-->
-		<script src="js/jquery-3.js"></script>
-		<script src="js/jquery.mask.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
-	</html>
+	<script src="js/jquery-3.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

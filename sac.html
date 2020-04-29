@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="stylesheet" href="css/form.css">
 
-	<title>Registrar Psicologo</title>
+	<title>Sac</title>
 </head>
 
 <body>
 	<div class="container shadow bg-light "> <!--Container do Body-->
+
 		<nav class="container-fluid bg-light"> <!--Container das Infos-->
 			<div class="row">
 				<div class="col justify-content-bg-start">
@@ -43,54 +44,32 @@
 						<a class="nav-link active" href="trabalhe-conosco.html">Trabalhe conosco</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Sair</a>
+						<a class="nav-link active" href="sign-in.html">Login</a>
 					</li>
 				</ul>
 			</div>
+			
 		</nav><!--Fim navbar-->
 		<hr class="my-1">
 
-		<div class="carousel slide" data-ride="carousel"> <!-- Inicio Carousel-->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="img/header2.jpg" alt="Primeiro Slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="img/header3.jpg" alt="Segundo Slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="img/header4.jpg" alt="Segundo Slide">
-				</div>
-			</div>
-		</div> <!--fim carousel-->
-		
+		<div class="sac">
+		<img src="img/sac2.jpg">
+		<div class="texto">
 		<form> 
-			<fieldset id="paciente"><legend><h2>ID do psicólogo</h2></legend>
-				<p><label for="cnome">Nome:</label> 
-					<input type="name" name="tnome" id="cnome" maxlength="35" placeholder="nome completo" required="" maxlength="75"> </p>
-
-				<p><label for="ce-mail">E-mail:</label> 
-					<input type="e-mail" name="te-mail" id="ce-mail" placeholder="e-mail de usuário" required="" maxlength="100"></p>
-
-					<p><label for="csenha">Senha:</label> 
-						<input type="password" name="nsenha" id="csenha"  maxlength="10" placeholder="digite sua senha" maxlength="10" required=""></p>
-
-					<p><label for="ccpf">CPF:</label> 
-						<input type="text" name="tcpf" id="ccpf" placeholder=" 000.000.000-00" onkeypress="$(this).mask('000.000.000-00');" required=""></p>
-
-					<p><label for="ccrp">CRP:</label> 
-						<input type="text" name="tcrp" id="ccrp" placeholder="00/000.000" onkeypress="$(this).mask('00/000.000');" required=""></p>
-
-					<p><label for="ctel">Telefone:</label> 
-						<input type="text" name="ttel" id="ctel" placeholder="(00) 00000-0000" onkeypress="$(this).mask('(00)00000-0000');" required=""></p>
-
+			<fieldset id="paciente"><legend><h2>Fale com um de nossos atendentes</h2></legend>
+				<h3>o tempo médio de aguardo para resposta é 20 minutos</h3>
+				<label for="cmensagem">Deixe sua mensagem: </label>
+					<textarea name="cmensagem" cols="45" rows="2" placeholder="deixe aqui sua mensagem"></textarea><p></p>
 					<button type="submit" class="btn btn-danger">Enviar</button>
-					<a href="restrito.html" class="btn btn-danger">Voltar</a>
-
-
 				</fieldset>
 
 			</form>
+		</div>
+
+		</div>
+
+			</form>
+		</div>
 			
 			<div class="container bg-dark">
 		<footer id="rodape">
@@ -124,12 +103,10 @@
 					</center>
 				</footer>
 			</div>
-					
 
 
-					<script src="js/jquery-3.js"></script>
-					<script src="js/jquery.mask.js"></script>
-					<script src="js/popper.js"></script>
-					<script src="js/bootstrap.min.js"></script>
-				</body>
-				</html>
+	<script src="js/jquery-3.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

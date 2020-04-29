@@ -35,13 +35,10 @@
 						<a class="nav-link active" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="#">Paciente</a>
+						<a class="nav-link active" href="Marc-consult.html">Contato</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="#">Contato</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="#">Trabalhe conosco</a>
+						<a class="nav-link active" href="trabalhe-conosco.html">Trabalhe conosco</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link active" href="index.html">Sair</a>
@@ -177,11 +174,11 @@
 			<div class="form-row">
 				<div class="form-group col-md-3">
 					<label for="Dados do Paciente">Numero de Sessões</label>
-					<textarea class="form-control" rows="1" placeholder="Numero de Sessões"></textarea>
+					<input type="text" class="form-control" rows="1" placeholder="Numero de Sessões" required="" maxlength="2">
 				</div>
 				<div class="form-group col-md-3">
 					<label for="Dados do Paciente">Valor da Sessão</label>
-					<textarea class="form-control" rows="1" placeholder="Valor da Sessão"></textarea>
+					<input type="" name=""class="form-control" rows="1" placeholder="R$000,00" onkeypress="$(this).mask('R$ 000,00');" required="">
 				</div>
 				<div class="form-group col-md-3">
 					<label for="Dados do Paciente">Periodicidade</label>
@@ -196,21 +193,55 @@
 					</select>
 				</div>
 			</div>
-			<center><button type="submit" class="btn btn-primary">Enviar</button>
-				<a href="restrito.html" class="btn btn-primary">Voltar</a>
+
+			<center><button type="submit" class="btn btn-danger">Enviar</button>
+				<a href="restrito.html" class="btn btn-danger">Voltar</a>
 
 
-				<center>
-					<hr>
-				</form>
+			</center>
+			<hr>
+		</form>
+	</div>
+	<div class="container bg-dark">
+		<footer id="rodape">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<h6 style="color: #0B6AE7;">Inicio</h6>
+						<a href="index.html">Pagina Inicial</a>
+					</div>
+					<div class="col-3">
+						<h6 style="color: #0B6AE7;">A Clinica</h6>
+						<a href="Pergunta-freq.html">Perguntas Frequentes</a><p></p>
+						<a href="Marc-consult.html">Contatos</a>
+					</div>
+					<div class="col-3">
+						<h6 style="color: #0B6AE7;">Consultas</h6>
+						<a href="Marc-consult.html">Marcação de Consultas</a>
+					</div>
+					<div class="col-3">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.718018113415!2d-43.12676068534521!3d-22.886872742913848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983c7968538f9%3A0x5dfec92769f3df6!2sAv.%20Visconde%20do%20Rio%20Branco%2C%20123%20-%20Centro%2C%20Niter%C3%B3i%20-%20RJ%2C%2024020-000!5e0!3m2!1spt-BR!2sbr!4v1588125536709!5m2!1spt-BR!2sbr" width="250
+						" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+					</div>
+				</div>
+			</div>
+
+			<center>
+				<hr 1>
+				<p style="color: #0B6AE7;">Copyright 2020 - Clínica de Psicologia Fictícia<br/>
+					<a href="http://facebook.com.br" target="_blank">Facebook</a> | <a href="http://twitter.com.br" target="_blank">Twitter</p>
+					</center>
+				</footer>
 			</div>
 
 
 
 
-			<!-- JavaScript-->
-			<script src="js/jquery-3.js"></script>
-			<script src="js/popper.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-		</body>
-		</html>
+	<!-- JavaScript-->
+	<script src="js/jquery-3.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
